@@ -1,0 +1,130 @@
+body {margin: 0; padding: 0; box-sizing: border-box; font-size: 16px; font-family: 'Inter', sans-serif; background: lightgray;}
+
+/* header */
+
+#header {
+    height: 64px;
+    background: #232f3e;
+    position: relative;
+}
+
+.img-logo {
+    position: absolute;
+    top: 8px;
+    left: 36px;
+    height: 45px;
+    width: 120px;
+}
+
+.img-logo img {
+    height: 45px;
+    width: 124px;
+}
+
+/* navbar */
+
+#navbar {
+    height: 40px;
+    background: #146eb4;
+    margin-top: -16px;
+}
+
+.links li {display: inline-block; padding: 10px; margin-left: -10px; color: #fff; cursor: pointer;}
+
+#main {margin: 1.3rem; min-width: 1700px;}
+
+/* orange row */
+
+.orange-row {
+    width: 100%;
+    height: 40px;
+    background: #ff9900;
+    color: #fff;
+    text-align: center;
+    position: relative;
+}
+
+.orange-row span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* green cover */
+
+.green-cover {
+    margin-top: 2rem;
+    background-image: url(assets/bg-image.png);
+    background-size: cover;
+    height: 200px;
+    position: relative;
+    color: #fff;
+}
+
+.green-cover h2 {font-size: 2rem;}
+.green-cover span {font-size: 1.2rem; font-weight: bold;}
+
+.cover-content{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* caroulsel */
+
+#carousel {margin-top: 2rem; background: #fff; padding: 1rem;}
+
+.carousel-text {padding: 5px 5px; margin-left: 7px; margin-bottom: 7px; font-weight: bold;}
+.carousel-text a {margin-left: 10px; text-decoration: none; color: #146eb4;}
+
+.carousel-content img{
+    display: inline-block;
+    height: 500px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.carousel-img {text-align: center;}
+
+
+/* cover */
+
+.cover img {
+    width: 100%;
+    height: 700px;
+}
+
+.cover-label {
+    margin-top: 0.5rem;
+    text-align: center; 
+}
+
+.cover span {
+    padding: 5px 5px 10px; font-weight: bold;
+}
+.cover a {margin-left: 8px; text-decoration: none; color: #146eb4; font-weight: bold;}
+
+.cover {margin-top: 3rem;}
+
+/* banner blue */
+
+.banner-blue {background: #37475a; margin-top: 3rem; text-align: center; padding: 15px;}
+.banner-blue a {color: #fff; text-decoration: none;}
+
+
+/* footer */
+
+.footer {background: #232f3e; padding: 7rem; position: relative;}
+
+.footer img {
+    width: 250px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
