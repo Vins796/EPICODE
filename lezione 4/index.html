@@ -1,168 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medium</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <!-- header menu -->
     <header class="menu">
+      <div class="nav">
         <div class="menu__logo">
-            <img src="assets/logo.png" alt="logo-medium">
+          <img src="assets/logo.png" alt="logo-medium" />
         </div>
         <div class="menu__right">
-            <div class="menu__right__icon">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-regular fa-bookmark"></i>
-                <i class="fa-solid fa-bell"></i>
-            </div>
-            <div class="menu__right__btn">
-                <a href="#" class="button">Resume membership</a>
-            </div>
-            <div class="menu__right__login">V</div>
+          <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-bookmark"></i>
+            <i class="fa-regular fa-bell"></i>
+          </div>
+          <div class="menu__right__btn">
+            <a href="#" class="button">Resume membership</a>
+          </div>
+          <div class="menu__right__login">V</div>
         </div>
+      </div>
     </header>
 
     <!-- main content -->
-    <main class="main-container">
-        <div class="container-left">
+    <main id="main-container">
+      <div class="container">
+        <div class="container-left pb-2">
+          <div class="wrapper">
             <!-- top bar -->
             <div class="top-bar">
-                <span><a href="#">FOLLOWING</a></span>
-                <span><a href="#">RECOMMENDED FOR YOU</a></span>
+              <span><a class="selected" href="#">FOLLOWING</a></span>
+              <span><a href="#">RECOMMENDED FOR YOU</a></span>
             </div>
             <!-- media text -->
             <div class="media-text">
+              <div class="media-text-content">
+                <section class="description">
+                  <div class="description-title">
+                    <img
+                      src="https://picsum.photos/30/30"
+                      alt="icon-media-text"
+                    />
+                    <span
+                      ><strong>Kolby Sisk</strong> in
+                      <strong>Udacity Eng & Data</strong></span
+                    >
+                  </div>
+                  <h2 class="pt-1 pb-1">
+                    React state management in 2022 - Return of the Redux
+                  </h2>
+                  <p class="pb-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non, voluptate? Vel asperiores libero corporis, vero beatae,
+                    aut ut accusantium iusto, culpa enim ipsam incidunt qui.
+                    Minima illum porro at alias.
+                  </p>
 
-                <div class="media-text-content">
-
-                    <section class="description">
-                        <div class="description-title">
-                            <img src="https://picsum.photos/30/30" alt="icon-media-text">
-                            <span><strong>Kolby Sisk</strong> in <strong>Udacity Eng & Data</strong></span>
-                        </div>
-                        <h2 class="pt-1 pb-1">React state management in 2022 - Return of the Redux</h2>
-                        <p class="pb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptate? Vel asperiores libero corporis, vero beatae, aut ut accusantium iusto, culpa enim ipsam incidunt qui. Minima illum porro at alias.</p>
-
-                        <section class="description-bottom">
-                            <div class="description-text">
-                                <span>Dec 3</span>
-                                <span>4 min read</span>
-                                <a class="btn">React</a>
-                                <span>Popular on Medium</span>
-                            </div>
-                            <div class="description-icon">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-ellipsis"></i>
-                            </div>
-                        </section>
-                    </section>
-
-                    <div class="media-text-image">
-                        <img src="https://picsum.photos/200/150" alt="media-text-img">
+                  <section class="description-bottom">
+                    <div class="description-text">
+                      <span
+                        >Dec 3 &bull; 4 min read &bull;
+                        <a class="btn">React</a>&bull; Popular on Medium</span
+                      >
                     </div>
-                </div>
-
-                <div class="media-text-content pt-3">
-
-                    <section class="description">
-                        <div class="description-title">
-                            <img src="https://picsum.photos/30/30" alt="icon-media-text">
-                            <span><strong>Kolby Sisk</strong> in <strong>Udacity Eng & Data</strong></span>
-                        </div>
-                        <h2 class="pt-1 pb-1">React state management in 2022 - Return of the Redux</h2>
-                        <p class="pb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptate? Vel asperiores libero corporis, vero beatae, aut ut accusantium iusto, culpa enim ipsam incidunt qui. Minima illum porro at alias.</p>
-
-                        <section class="description-bottom">
-                            <div class="description-text">
-                                <span>Dec 3</span>
-                                <span>4 min read</span>
-                                <a class="btn">React</a>
-                                <span>Popular on Medium</span>
-                            </div>
-                            <div class="description-icon">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-ellipsis"></i>
-                            </div>
-                        </section>
-                    </section>
-
-                    <div class="media-text-image">
-                        <img src="https://picsum.photos/200/150" alt="media-text-img">
+                    <div class="description-icon">
+                      <i class="fa-regular fa-bookmark"></i>
+                      <i class="fa-solid fa-ellipsis"></i>
                     </div>
+                  </section>
+                </section>
+
+                <div class="media-text-image-container">
+                  <img class="media-text-image" alt="" />
                 </div>
+              </div>
 
-                <div class="media-text-content pt-3">
+              <div class="media-text-content pt-3">
+                <section class="description">
+                  <div class="description-title">
+                    <img
+                      src="https://picsum.photos/30/30"
+                      alt="icon-media-text"
+                    />
+                    <span
+                      ><strong>Kolby Sisk</strong> in
+                      <strong>Udacity Eng & Data</strong></span
+                    >
+                  </div>
+                  <h2 class="pt-1 pb-1">
+                    React state management in 2022 - Return of the Redux
+                  </h2>
+                  <p class="pb-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non, voluptate? Vel asperiores libero corporis, vero beatae,
+                    aut ut accusantium iusto, culpa enim ipsam incidunt qui.
+                    Minima illum porro at alias.
+                  </p>
 
-                    <section class="description">
-                        <div class="description-title">
-                            <img src="https://picsum.photos/30/30" alt="icon-media-text">
-                            <span><strong>Kolby Sisk</strong> in <strong>Udacity Eng & Data</strong></span>
-                        </div>
-                        <h2 class="pt-1 pb-1">React state management in 2022 - Return of the Redux</h2>
-                        <p class="pb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptate? Vel asperiores libero corporis, vero beatae, aut ut accusantium iusto, culpa enim ipsam incidunt qui. Minima illum porro at alias.</p>
-
-                        <section class="description-bottom">
-                            <div class="description-text">
-                                <span>Dec 3</span>
-                                <span>4 min read</span>
-                                <a class="btn">React</a>
-                                <span>Popular on Medium</span>
-                            </div>
-                            <div class="description-icon">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-ellipsis"></i>
-                            </div>
-                        </section>
-                    </section>
-
-                    <div class="media-text-image">
-                        <img src="https://picsum.photos/200/150" alt="media-text-img">
+                  <section class="description-bottom">
+                    <div class="description-text">
+                      <span
+                        >Dec 3 &bull; 4 min read &bull;
+                        <a class="btn">React</a>&bull; Popular on Medium</span
+                      >
                     </div>
-                </div>
-
-                <div class="media-text-content pt-3">
-
-                    <section class="description">
-                        <div class="description-title">
-                            <img src="https://picsum.photos/30/30" alt="icon-media-text">
-                            <span><strong>Kolby Sisk</strong> in <strong>Udacity Eng & Data</strong></span>
-                        </div>
-                        <h2 class="pt-1 pb-1">React state management in 2022 - Return of the Redux</h2>
-                        <p class="pb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, voluptate? Vel asperiores libero corporis, vero beatae, aut ut accusantium iusto, culpa enim ipsam incidunt qui. Minima illum porro at alias.</p>
-
-                        <section class="description-bottom">
-                            <div class="description-text">
-                                <span>Dec 3</span>
-                                <span>4 min read</span>
-                                <a class="btn">React</a>
-                                <span>Popular on Medium</span>
-                            </div>
-                            <div class="description-icon">
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-ellipsis"></i>
-                            </div>
-                        </section>
-                    </section>
-
-                    <div class="media-text-image">
-                        <img src="https://picsum.photos/200/150" alt="media-text-img">
+                    <div class="description-icon">
+                      <i class="fa-regular fa-bookmark"></i>
+                      <i class="fa-solid fa-ellipsis"></i>
                     </div>
+                  </section>
+                </section>
+
+                <div class="media-text-image-container">
+                  <img class="media-text-image" alt="" />
                 </div>
+              </div>
+
+              <div class="media-text-content pt-3">
+                <section class="description">
+                  <div class="description-title">
+                    <img
+                      src="https://picsum.photos/30/30"
+                      alt="icon-media-text"
+                    />
+                    <span
+                      ><strong>Kolby Sisk</strong> in
+                      <strong>Udacity Eng & Data</strong></span
+                    >
+                  </div>
+                  <h2 class="pt-1 pb-1">
+                    React state management in 2022 - Return of the Redux
+                  </h2>
+                  <p class="pb-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non, voluptate? Vel asperiores libero corporis, vero beatae,
+                    aut ut accusantium iusto, culpa enim ipsam incidunt qui.
+                    Minima illum porro at alias.
+                  </p>
+
+                  <section class="description-bottom">
+                    <div class="description-text">
+                      <span
+                        >Dec 3 &bull; 4 min read &bull;
+                        <a class="btn">React</a>&bull; Popular on Medium</span
+                      >
+                    </div>
+                    <div class="description-icon">
+                      <i class="fa-regular fa-bookmark"></i>
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </section>
+                </section>
+
+                <div class="media-text-image-container">
+                  <img class="media-text-image" alt="" />
+                </div>
+              </div>
+
+              <div class="media-text-content pt-3">
+                <section class="description">
+                  <div class="description-title">
+                    <img
+                      src="https://picsum.photos/30/30"
+                      alt="icon-media-text"
+                    />
+                    <span
+                      ><strong>Kolby Sisk</strong> in
+                      <strong>Udacity Eng & Data</strong></span
+                    >
+                  </div>
+                  <h2 class="pt-1 pb-1">
+                    React state management in 2022 - Return of the Redux
+                  </h2>
+                  <p class="pb-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non, voluptate? Vel asperiores libero corporis, vero beatae,
+                    aut ut accusantium iusto, culpa enim ipsam incidunt qui.
+                    Minima illum porro at alias.
+                  </p>
+
+                  <section class="description-bottom">
+                    <div class="description-text">
+                      <span
+                        >Dec 3 &bull; 4 min read &bull;
+                        <a class="btn">React</a>&bull; Popular on Medium</span
+                      >
+                    </div>
+                    <div class="description-icon">
+                      <i class="fa-regular fa-bookmark"></i>
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </section>
+                </section>
+
+                <div class="media-text-image-container">
+                  <img class="media-text-image" alt="" />
+                </div>
+              </div>
+
+              <div class="media-text-content pt-3">
+                <section class="description">
+                  <div class="description-title">
+                    <img
+                      src="https://picsum.photos/30/30"
+                      alt="icon-media-text"
+                    />
+                    <span
+                      ><strong>Kolby Sisk</strong> in
+                      <strong>Udacity Eng & Data</strong></span
+                    >
+                  </div>
+                  <h2 class="pt-1 pb-1">
+                    React state management in 2022 - Return of the Redux
+                  </h2>
+                  <p class="pb-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non, voluptate? Vel asperiores libero corporis, vero beatae,
+                    aut ut accusantium iusto, culpa enim ipsam incidunt qui.
+                    Minima illum porro at alias.
+                  </p>
+
+                  <section class="description-bottom">
+                    <div class="description-text">
+                      <span
+                        >Dec 3 &bull; 4 min read &bull;
+                        <a class="btn">React</a>&bull; Popular on Medium</span
+                      >
+                    </div>
+                    <div class="description-icon">
+                      <i class="fa-regular fa-bookmark"></i>
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </section>
+                </section>
+
+                <div class="media-text-image-container">
+                  <img class="media-text-image" alt="" />
+                </div>
+              </div>
+
+              <div class="media-text-content pt-3">
+                <section class="description">
+                  <div class="description-title">
+                    <img
+                      src="https://picsum.photos/30/30"
+                      alt="icon-media-text"
+                    />
+                    <span
+                      ><strong>Kolby Sisk</strong> in
+                      <strong>Udacity Eng & Data</strong></span
+                    >
+                  </div>
+                  <h2 class="pt-1 pb-1">
+                    React state management in 2022 - Return of the Redux
+                  </h2>
+                  <p class="pb-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Non, voluptate? Vel asperiores libero corporis, vero beatae,
+                    aut ut accusantium iusto, culpa enim ipsam incidunt qui.
+                    Minima illum porro at alias.
+                  </p>
+
+                  <section class="description-bottom">
+                    <div class="description-text">
+                      <span
+                        >Dec 3 &bull; 4 min read &bull;
+                        <a class="btn">React</a>&bull; Popular on Medium</span
+                      >
+                    </div>
+                    <div class="description-icon">
+                      <i class="fa-regular fa-bookmark"></i>
+                      <i class="fa-solid fa-ellipsis"></i>
+                    </div>
+                  </section>
+                </section>
+
+                <div class="media-text-image-container">
+                  <img class="media-text-image" alt="" />
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+
+        <!-- sidebar -->
+        <div class="sidebar-container">
+          <section class="social">
+            <article class="social-container pb-1">
+              <i class="fa-brands fa-medium"></i>
+              <i class="fa-solid fa-plus gray"></i>
+              <i class="fa-brands fa-twitter blue"></i>
+            </article>
+            <p class="pb-1">
+              Discover medium writers you already follow on Twitter.
+            </p>
+            <a href="#" class="button button-social"
+              ><i class="fa-brands fa-twitter blue"></i> Connect to Twitter</a
+            >
+            <a href="#" class="gray pt-1">Maybe Later</a>
+          </section>
+
+          <section class="recommended sb-smt">
+            <h4 class="mb-1">Recommended topics</h4>
+            <div class="topics">
+              <span>Technology</span><span>Money</span><span>Business</span
+              ><span>Productivity</span> <span>Psychology</span
+              ><span>Mindfulness</span><span>Art</span>
+            </div>
+          </section>
+          <section class="follow sb-smt">
+            <h4 class="mb-2">Who to follow</h4>
+            <div class="avatars-section">
+              <div class="avatar">
+                <div class="avatar-box">
+                  <img src="https://picsum.photos/50/50" alt="avatar-img" />
+                  <div class="avatar-info">
+                    <h4>Name</h4>
+                    <small>law professor, activist</small>
+                  </div>
+                </div>
+                <a href="#" class="button secondary">Follow</a>
+              </div>
+              <div class="avatar">
+                <div class="avatar-box">
+                  <img src="https://picsum.photos/50/50" alt="avatar-img" />
+                  <div class="avatar-info">
+                    <h4>Name</h4>
+                    <small
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit.</small
+                    >
+                  </div>
+                </div>
+                <a href="#" class="button secondary">Follow</a>
+              </div>
+              <div class="avatar">
+                <div class="avatar-box">
+                  <img src="https://picsum.photos/50/50" alt="avatar-img" />
+                  <div class="avatar-info">
+                    <h4>Name</h4>
+                    <small
+                      >Lorem ipsum dolor sit amet, consectetur adipisicing
+                      elit.</small
+                    >
+                  </div>
+                </div>
+                <a href="#" class="button secondary">Follow</a>
+              </div>
+            </div>
+          </section>
+
+          <section class="recently-saved">
+            <div class="media-text-content pt-3">
+              <section class="description">
+                <div class="description-title">
+                  <img
+                    src="https://picsum.photos/30/30"
+                    alt="icon-media-text"
+                  />
+                  <span
+                    ><strong>Kolby Sisk</strong> in
+                    <strong>Udacity Eng & Data</strong></span
+                  >
+                </div>
+                <h4 class="pt-1 pb-1">
+                  React state management in 2022 - Return of the Redux
+                </h4>
+                <span>Dec 3 4 min read</span>
+                <small class="see-all">See all (3)</small>
+              </section>
+            </div>
+          </section>
+
+          <div class="footer">
+            <span>Technology</span><span>Money</span><span>Business</span
+            ><span>Productivity</span> <span>Psychology</span
+            ><span>Mindfulness</span><span>Art</span>
+          </div>
+        </div>
+      </div>
     </main>
 
-
-    
-    <script src="https://kit.fontawesome.com/3abcf2ee49.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/3abcf2ee49.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
