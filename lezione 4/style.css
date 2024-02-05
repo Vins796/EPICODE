@@ -1,8 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+* {margin: 0;padding: 0;box-sizing: border-box;}
 
 body {
   font-size: 16px;
@@ -221,6 +217,7 @@ a {
   text-align: center;
 }
 .social p {width: 75%;}
+
 .social-container {
   margin-top: 8%;
   font-size: 26px;
@@ -252,9 +249,8 @@ a {
 
 /* follow */
 
-.follow {
-  width: 60%;
-}
+.follow {width: 60%;}
+
 .avatar {
   display: flex;
   align-items: center;
@@ -278,11 +274,9 @@ a {
   margin-right: 15px;
 }
 
-
 /* recently-saved */
 .see-all {display: block; color: rgb(55, 157, 55); margin-top: 8%; font-weight: 600; cursor: pointer;}
 
 /* footer */
-
 .footer {margin-top: 15%;}
 .footer span {background-color: transparent; padding-left: 0;}
