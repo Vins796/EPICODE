@@ -14,9 +14,7 @@ ES. L'utente Marco Rossi e' un ambassador, quindi la frase dovrebbe essere "Marc
 Infine, crea un SECONDO array in cui inserirai SOLO gli ambassador.
 */
 
-// inserisco gli utenti
-
-
+// inserisco gli utenti e faccio delle modifiche sulla proprietà isAmbassador
 let marco = {
   name: "Marco",
   lastName: "Rossi",
@@ -36,58 +34,59 @@ let amy = {
 };
 
 
-// lista prezzi, costo spedizione, specialPrice
-
+// lista prezzi, costo spedizione, specialPrice, carrello
 const prices = [34, 5, 2];
 const shippingCost = 50;
 
-const specialPrice = 0.7;
+let specialPrice = 0.7;
+let carrello = 0;
+
 
 // creo array di tutti gli utenti
-
 let users = [];
 users.push(marco);
 users.push(paul);
 users.push(amy);
 
 
-// creo array  di utenti ambassador
-
+// creo array di utenti ambassador
 let ambassadorUsers = [];
 
 for (let i = 0; i < users.length; i++) {
-  console.log(`${users[i].name} ${users[i].lastName}${users[i].isAmbassador ? '' : ' non'} è un ambassador`);
-  if (users.isAmbassador) {
+  console.log(`${users[i].name} ${users[i].lastName}${users[i].isAmbassador ? ' è' : ' non è'} un ambassador.`);
+  const utente = users[i];
+  if (utente.isAmbassador) {
     // esego il push nell'array
-    ambassadorUsers.push(users);
-  }   
+    ambassadorUsers.push(utente);
+  }  
 }
+console.log(ambassadorUsers); 
 
 
 // creo sistema del calcolo del carrello
-
-let totale = 0;
 for (let i = 0; i < prices.length; i++) {
-  totale += prices[i];
+  let prezzo = prices[i];
+  carrello += prices[i];
 }
+console.log(carrello);
 
 for (let i = 0; i < users.length; i++) {
+  carrello = 41;
+
   if (users[i].isAmbassador) {
-    totale *= specialPrice;
-    totale += shippingCost;
-    console.log(`Totale carrello per ${users[i].name} ${users[i].lastName} : ${totale}€.`);
+    carrello = (carrello * specialPrice) + shippingCost;
+    console.log(`Totale carrello per ${users[i].name} ${users[i].lastName} : ${carrello.toFixed(2)}€.`);
   } else {
-    totale += shippingCost;
-    console.log(`Totale carrello per ${users[i].name} ${users[i].lastName} : ${totale}€.`);
-  }  
-
-    // verifico se il carrello suoera i 100
-
-    if (totale > 100) {
-      totale -= shippingCost;
-      console.log(`Totale carrello per ${users[i].name} ${users[i].lastName} : ${totale}€ senza spese di spedizione.`);
-    } 
+    carrello += shippingCost;
+    console.log(`Totale carrello per ${users[i].name} ${users[i].lastName} : ${carrello.toFixed(2)}€.`);
+  }
+  
+  if (carrello > 100) {
+    carrello;
+    console.log(`Totale carrello per ${users[i].name} ${users[i].lastName} : ${carrello.toFixed(2)}€ senza spese di spedizione.`);
+  }
 }
+
 
 
 
