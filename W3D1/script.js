@@ -75,21 +75,16 @@ upperFirst('ciao mondo');
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function giveMeRandom() {
+function giveMeRandom(n) {
     
     let arrayRandom = [];
-    let x = Math.floor((Math.random() * 10));
-    let y = Math.floor((Math.random() * 10));
-    let z = Math.floor((Math.random() * 10));
-
-    arrayRandom.push(x, y, z);
-
-    console.log(arrayRandom);
+    
+    for (let i = 0; i < n; i++) {
+        arrayRandom.push(Math.floor(Math.random() * 11));        
+    }
+    return arrayRandom;
 }
-
-giveMeRandom();
-
-
+console.log(giveMeRandom(7));
 
 //EXTRA:
 /* ESERCIZIO 1
@@ -111,20 +106,15 @@ console.log(area(10, 20));
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-function crazyDiff() {
+function crazyDiff(num) {
 
-    let numeroFisso = 19;
-    let numeroFornito = -100;
-    let differenzaAssoluta = Math.abs(numeroFornito - numeroFisso);
-
-    console.log(differenzaAssoluta);
+    let differenzaAssoluta = Math.abs(num - 19);
 
     if (differenzaAssoluta > 19) {
-        differenzaAssoluta *= 3;
-        return differenzaAssoluta;
+        return differenzaAssoluta * 3;
     }
 }
-console.log(crazyDiff()); 
+console.log(crazyDiff(-100)); 
 
 /* ESERCIZIO 3
  Scrivi una funzione chiamata "codify" che accetta una stringa come parametro.
@@ -132,6 +122,16 @@ console.log(crazyDiff());
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function codify(stringa) {
+    if (stringa.startsWith('code')) {
+        return stringa;
+    } else {
+        return 'code ' + stringa;
+    }
+}
+console.log(codify('coders'));
+console.log(codify('banane'));
 
 
 
@@ -143,8 +143,23 @@ console.log(crazyDiff());
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+function chek3and7(numInt) {
+    if (numInt % 3 === 0 || numInt % 7 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
+console.log(chek3and7(14));
+
 /* ESERCIZIO 5
  Scrivi una funzione chiamata "cutString", che accetta una stringa come parametro e la ritorna senza il primo e l'ultimo carattere.
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+function cutString(stringa) {
+    return stringa.slice(1, -1)
+}
+
+console.log(cutString('ciao'));
