@@ -1,0 +1,115 @@
+/* applico il reset alla pagina html + font per il body */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.dn { opacity: 0; transition: opacity 0.1s ease;}
+
+/* applico stile night mode */
+
+.night-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+.night-mode .menu{background-color: #000000;}
+.night-mode .footer{background-color: #000000;}
+.night-mode a {color: #fff;}
+
+/* stile dell'header */
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 2%;
+  background: #333;
+}
+
+#title a {color: #fff; text-decoration: none;}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links li {
+  display: inline-block;
+  padding: 15px 10px; 
+}
+.links-item {
+  color: #fff;
+  text-decoration: none;
+}
+
+.button {
+  margin-left: 30px;
+  padding: 14px 20px;
+  border-radius: 10px;
+  color: #fff;
+  background: purple;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/* applico stile della tabella */
+
+table {
+  margin: 3rem 0;
+  width: 100%;
+}
+
+td {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.product {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+}
+
+img {
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+img:hover {
+  transform: scale(1.2);
+  transition: all 1s cubic-bezier(.215, .61, .355, 1);
+}
+
+/* applico lo stile dell'input recensone */
+
+button {
+  border: 0;
+}
+input {
+  width: 50%;
+  padding: 30px;
+  margin: 3rem;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+/* applico lo stile al footer */
+.footer {
+  background: #333;
+  padding: 75px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.address {
+  color: #fff; cursor: pointer; text-decoration: none;
+}

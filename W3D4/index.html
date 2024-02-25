@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Esercizio W3D4</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- titolo del mio e-commerce -->
+
+    <header class="menu">
+      <h1 id="title"><a href="#">IL PARADISO DELLA BRUGOLA</a></h1>
+      <div class="links">
+        <ul>
+          <li><a class="links-item" href="#">Home</a></li>
+          <li><a class="links-item" href="#">Prodotti</a></li>
+          <li><a class="links-item" href="#">Contatti</a></li>
+        </ul>
+        <button class="button nightModeButton">Night Mode</button>
+      </div>
+    </header>
+
+    <!-- aggiungo la tabella con i miei 5 prodotti  -->
+
+    <div class="container-tabella">
+      <table>
+        <tr>
+          <!-- prodotto 1 -->
+          <td><img src="assets/Apple.jpg" alt="Prodotto 1" /></td>
+          <td>
+            <a
+              class="product"
+              href="https://www.amazon.it/Apple-iPhone-15-Pro-128/dp/B0CHXCS15G/ref=sr_1_4?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2UTRIYGJW5K6E&dib=eyJ2IjoiMSJ9.rUMJ5iSi6OpXQCScvqypWHY0mZIWyx7ZRXTWboRhbjeuo4zkF8Xh74bUu64kU_9sYBwye8dSaC3keQXzfyMXvvtCcqTWk3D8_fGHt8z5ZsSFNLWgUZV1-wmiFxDbmC5nU4F20egMoDrQ6FVKtQVkeq_lZH_QS1k7Z9qPDFPSNjiBhmoLfiUNHRMDfu3ZoQ1QGpal2w5V5w8zYAlGWbtJXzYqy53a_JjUMLSt7SmDaElOK5UEB5XZdJrHcZXScC_w-ua75gRaET5DYgB88TXxYFwzbM69kAW45oxjHUEZGWE.KexGy6GMcxqplVnPTkUFwAyBbYlEt_2WpyOj8DuRekE&dib_tag=se&keywords=iphone+15&qid=1708630983&sprefix=iphone+15%2Caps%2C139&sr=8-4&ufe=app_do%3Aamzn1.fos.d4b79b69-7fa3-49d4-9d2a-f8ac4bab3f93"
+              >iPhone 15</a
+            >
+          </td>
+          <td>Apple iPhone 15 Pro (128 GB) - Titanio blu</td>
+          <td class="prices">1.029,00€</td>
+        </tr>
+        <tr>
+          <!-- prodotto 2 -->
+          <td><img src="assets/galaxy.jpg" alt="Prodotto 2" /></td>
+          <td>
+            <a
+              class="product"
+              href="https://www.amazon.it/Caricatore-Smartphone-Fotocamera-Versione-italiana/dp/B0BQMSVGHT/ref=sr_1_3?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=PN7ORQWLFC5T&dib=eyJ2IjoiMSJ9.5NuO_y5StZUoqCK3PGHtCiDG871gOsP-H3GjBeWrIs0Hk0_sdiQZAPFGSm3mWfxC3g5EmprIWxnldibZ6FdbwTIxwkcDt94eiQiUbczgSP28ASsQzXANkYV4RC2J76FmNFPLowegSbMZHzn4bpTk-7KJlgJudj9XrkBaT4b3_Cq1QwA-7xP0c62fVwPUkumEmhgjmWznzlEKhKebBVVm561qa4aDoyxeNcCvHK_NOkpPLlNxklfqiy5lK0vc66YF5iMS8uu0M_-e2Ps7tupqhrByztlLcYYOfEn26raSCiw.RNMPK4j0nUYssnqHYHSfzY-4Ej8v3BpUNzkj5IFd4Po&dib_tag=se&keywords=galaxy+s23&qid=1708631516&sprefix=galaxy+s23%2Caps%2C131&sr=8-3-spons&ufe=app_do%3Aamzn1.fos.9d4f9b77-768c-4a4e-94ad-33674c20ab35&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+              >Samsung Galaxy S23</a
+            >
+          </td>
+          <td>Samsung Galaxy S23 Ultra - 256 GB</td>
+          <td class="prices">1.479,00€</td>
+        </tr>
+        <tr>
+          <!-- prodotto 3 -->
+          <td><img src="assets/hhw.jpg" alt="Prodotto 3" /></td>
+          <td>
+            <a
+              class="product"
+              href="https://www.amazon.it/Huawei-Lite-Peacock-Blue-128gb/dp/B07R1Y57YF/ref=sr_1_7?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=3AR371TDSB1L2&dib=eyJ2IjoiMSJ9.s5h9eZxwfgNrD5_IqxOeoEtCSkvTZ4qSwclYq5I8pAVkJWChU18dOzQwdJ_9d-J1WXlkJ1Yseai3iqDSw2_98KLQAc5wfuQHBD9kSOswLo6BbVFkdGXP50EVm1YaThkMTP3U3-NV_e2TLOwgZLI1iK2ZHJ0WBAmdupA5iGBOAghdyqAXauZc6uz7pNoTHnYkMI3YJ5-O_TT2Su8hKKJmC5UHO6hJcOBwxb99cQa1IF3Amfh02clJAp5ogdGv7Vb791x4ax-2VagB4qE1dEnldOaOE1j-WH9j5W6dP9gl7ok.Ut2vVHJJX1tFu1_P_FyZPLblUZ3RNa8DDiCGm4kKeiI&dib_tag=se&keywords=huawei&qid=1708631617&sprefix=huawe%2Caps%2C126&sr=8-7&ufe=app_do%3Aamzn1.fos.a99c21ac-6fab-4211-bebc-732f23cb947d"
+              >Huawei</a
+            >
+          </td>
+          <td>Huawei P30 Lite Peacock Blue 6.15" 4gb/128gb Dual Sim</td>
+          <td class="prices">220,00€</td>
+        </tr>
+        <tr>
+          <!-- prodotto 4 -->
+          <td><img src="assets/oppo.jpg" alt="Prodotto 4" /></td>
+          <td>
+            <a
+              class="product"
+              href="https://www.amazon.it/OPPO-Smartphone-fotocamera-Garanzia-Versione/dp/B09SZGSDVZ/ref=sr_1_2?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=20FB9T12U0LMW&dib=eyJ2IjoiMSJ9.BPhBHpZzKoMY9TY-wvypyrGRll3nxrKqoPonPKGdSSWp27GWTfwi-Tv8cgVjwyIFBrJf1vdekbARZkopXH0BPDFdp5pzb4JJPW-N22-GMYkUQy51CV3MvgPmtw-Q0OlaePXMhwiHA2xsFp-a3G2M3kYjKT9bI-lsX_qTNok5xYpjzMZdH_dJdfyEl6L6vtQU47q1HxRsh1PjQEq_86ryq_nKpcuaLh9bsDr2Ao_bzvLLSY7ciktkHO5kv4xhIW7OeIGpyFUzoTDyLYWzK4idresJ3ae33if75P1AmJWL3E4.F5RkA9GNNA8ZOsc19ogismimG1Ok0GLcoHCR3JaCtzA&dib_tag=se&keywords=oppo&qid=1708631796&sprefix=opp%2Caps%2C141&sr=8-2-spons&ufe=app_do%3Aamzn1.fos.d4b79b69-7fa3-49d4-9d2a-f8ac4bab3f93&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1"
+              >Oppo</a
+            >
+          </td>
+          <td>
+            OPPO Find X5 Lite Smartphone, AI Tripla fotocamera 64+8+2MP, Display
+            6.43”
+          </td>
+          <td class="prices">279,90€</td>
+        </tr>
+        <tr>
+          <!-- prodotto 5 -->
+          <td><img src="assets/nokia.jpg" alt="Prodotto 5" /></td>
+          <td>
+            <a
+              class="product"
+              href="https://www.amazon.it/Nokia-Telefono-cellulare-Bluetooth-scuro/dp/B071HTGC1R/ref=sr_1_5?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1E9L2STXN7XAQ&dib=eyJ2IjoiMSJ9.nuXc8n6sGvWAhqvAG58UOeA0nr8RsKWG9wJJI7iLL9wPXVQtOQlj9HWS1VIz5yJ3kH5OJIV5CzgBKL0q8PIrGiG-gh6Gtnr9MAVy0BVxyM9lRHXSCR5EaB-73oVsyHs3liGf3jvsvs0jdufZrqYFBJyv6jWWG3YxM4UeRzEFvCPreelwBAoouWJfBRXXmB_NZajTgakScZ3ueyBlM9bLPmPtsQUwvbqqL7S4qekc7lDbVhm6CsfDhgteXABdynP0McXa4J4zQVHXNjpCbB5UZPfkeRY0eBsWDTgaUIzU-d8.O1acSKye7_-ifyS0TKKhvWoXgxnzs9wjA2vpH2FtXOE&dib_tag=se&keywords=nokia+3310&qid=1708631893&sprefix=nokia+3310%2Caps%2C126&sr=8-5"
+              >Nokia 3310</a
+            >
+          </td>
+          <td>
+            Nokia 3310 Telefono cellulare 2.4" ((6,1 cm) 2 MP, Bluetooth, 1200
+            mAh, Dual SIM), Blu scur
+          </td>
+          <td class="prices">69,99€</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- aggiungo il campo testuale per la recensione -->
+
+    <div class="recensione">
+      <input type="text" placeholder="Inserisci la tua recensione" />
+      <button class="button">Invia</button>
+    </div>
+
+    <!-- aggiungo il footer -->
+
+    <footer class="footer">
+      <p>
+        <a class="address" href="#">Skylab, Via Washington 35, Pizzo Calabro</a>
+      </p>
+    </footer>
+
+    <!-- inserisco lo script di js -->
+    <script src="script.js"></script>
+  </body>
+</html>
