@@ -11,7 +11,7 @@ let isNightMode = false;
 
 // Funzioni
 
-// cambio titolo
+// Cambio titolo
 cambioTitolo.addEventListener("click", function () {
   cambioTitolo.textContent = "Benvenuti sul mio e-commerce!";
   cambioTitolo.style.color = "white";
