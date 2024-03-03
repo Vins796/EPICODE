@@ -23,10 +23,11 @@ address.addEventListener("click", function () {
   address.textContent = "Via dalle Palle 2";
 });
 
-// cambio colore body
+// cambio colore body con night mode
 cambioColoreBody.addEventListener("click", function () {
   body.classList.toggle("night-mode");
 });
+
 
 // cambio classe css ai link della tabella
 for (let i = 0; i < links.length; i++) {
@@ -35,18 +36,18 @@ for (let i = 0; i < links.length; i++) {
       links[i].style.color = "red";
     });
     links[i].addEventListener("mouseout", function () {
-      links[i].style.color = "black";
-    });
-  }
-
-  if (isNightMode) {
-    links[i].addEventListener("mouseover", function () {
-      links[i].style.color = "red";
-    });
-    links[i].addEventListener("mouseout", function () {
       links[i].style.color = "white";
     });
   }
+
+if (isNightMode) {
+  links[i].addEventListener("mouseover", function () {
+    links[i].style.color = "red";
+  });
+  links[i].addEventListener("mouseout", function () {
+    links[i].style.color = "black";
+  });
+}
 }
 
 // aggiungo e tolgo una classe alle immagini
@@ -58,9 +59,4 @@ for (let i = 0; i < changeClassImg.length; i++) {
   changeClassImg[i].addEventListener("mouseout", function () {
     changeClassImg[i].classList.toggle("dn");
   });
-}
-
-// cambio colore del prezzo
-for (let i = 0; i < changeColorPrices.length; i++) {
-  changeColorPrices[i];
 }

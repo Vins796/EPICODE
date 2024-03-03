@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- creo il container padre -->
+    <div class="container">
+      <!-- creo il contenitore che racchiude tutti gli input -->
+      <div class="input-section">
+        <img src="assets/blob.png" alt="blob-png" />
+
+        <!-- creo il blocco input location -->
+        <div class="input-location">
+          <label for="location">Inserisci Luogo</label>
+          <input type="text" class="location" id="location" name="location" />
+        </div>
+
+        <!-- creo il blocco input lavoro -->
+        <div class="input-lavoro">
+          <label for="lavoro">Inserisci Lavoro</label>
+          <input type="text" class="lavoro" id="lavoro" name="lavoro" />
+        </div>
+
+        <!-- creo l'input del bottone -->
+        <input class="input-button" type="button" id="submit" value="Cerca" />
+      </div>
+    </div>
+
+    <!-- creo la sezione che verrà stampata a schermo dopo aver fatto la ricerca -->
+    <div class="risultato">
+      <p id="textParagraph"></p>
+      <ul id="risultatiValori"></ul>
+    </div>
+
+    <!-- inserisco lo script di js -->
+    <script src="script.js"></script>
+  </body>
+</html>
