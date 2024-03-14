@@ -1,4 +1,5 @@
-/* DONE 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron
+/* 
+DONE 1) Crea un selettore per selezionare l'<h1> nella sezione "hero", ovvero nel jumbotron
 DONE 2) Crea un selettore per selezionare tutti i figli dell'elemento navbar
 DONE 3) Crea un selettore per selezionare il link "Continua a leggere" del jumbotron
 DONE 4) Crea un selettore per selezionare il primo blog post
@@ -9,7 +10,8 @@ DONE 8) Crea un selettore per selezionare l'autore del secondo blog post
 DONE 9) Crea un selettore per selezionare il secondo <li> della lista del terzo blog post
 DONE 10) Crea un selettore per selezionare il link "Torna su" che trovi a fondo pagina nell'angolo in basso a destra
 DONE 11) Crea un selettore per selezionare il bottone "Nuovi" che trovi in basso
-DONE 12) Crea un selettore per selezionare il secondo link del footer */
+DONE 12) Crea un selettore per selezionare il secondo link del footer
+ */
 
 /* ESERCIZIO 1 */
 .jumbotron h1 {color: red;}
@@ -27,7 +29,7 @@ DONE 12) Crea un selettore per selezionare il secondo link del footer */
 .blog-post:first-of-type hr {background: red;}
 
 /* ESERCIZIO 6 */
-.blog-pagination a:nth-child(even) {color: blue;}
+nav span:nth-of-type(even) {color: blue; }
 
 /* ESERCIZIO 7 */
 aside .p-4:nth-child(2) ol li {border: 1px solid red; padding: 10px;}

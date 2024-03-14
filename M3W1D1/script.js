@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // ESERCIZIO 2 EXTRA
 
 // seleziono tutti i links
-const continuaALeggereLinks = document.querySelectorAll('.streched-link');
+const continuaALeggereLinks = document.querySelectorAll('.stretched-link');
 
 // devo ciclare tutti i link
 continuaALeggereLinks.forEach(function (link) {
