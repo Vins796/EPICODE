@@ -9,9 +9,13 @@ stile navbar
     display: flex; 
     justify-content: center;
     align-items: center;
-    padding: 30px;
+    width: 40%;
+    border-radius: 100px;
+    padding: 20px;
     background: #FFF3C7;
+    margin: 10px auto;
     gap: 25px;
+    filter: drop-shadow(0 0 0.75rem #FFD23F);
 }
 
 /* ---------------------------------------------
